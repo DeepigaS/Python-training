@@ -1,0 +1,20 @@
+import math
+def is_perfect_square(n):
+    sqrt_n=int(math.sqrt(n))
+    return sqrt_n*sqrt_n==n
+def largest(numbers):
+    max_num=-1
+    for num in numbers:
+        if not is_perfect_square (num):
+            max_num=max(max_num, num)
+    return max_num
+n=int(input("Enter the number:\n"))
+numbers=[]
+for i in range(n):
+    num=int(input("Enter integer:\n".format(i+1)))
+    numbers. append(num)
+result=largest(numbers)
+if result== -1:
+    print("There is no number that is a perfect square. ")
+else:
+    print("The largest number that is not a perfect square is:",result)

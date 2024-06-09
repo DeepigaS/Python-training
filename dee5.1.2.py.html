@@ -1,0 +1,16 @@
+a=int(input())
+l=[]
+d=0
+for i in range(0,a):
+    x=int(input())
+    l.append(x)
+s=int(input())
+for i in range(0,a):
+    if(l[i]==s):
+        d=d+1
+        break
+if(a>0):
+    print(f"{s} found at position {i}")
+else:
+    print(f"{s} not found")
+

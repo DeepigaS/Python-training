@@ -1,0 +1,11 @@
+def count(input_str):
+    freq={}
+    for char in input_str:
+        if char in freq:
+            freq[char]+=1
+        else:
+            freq[char]=1
+    for char, count in freq. items():
+        print(f"Character'{char}'occurs{count}times")
+input_str="hello world"
+count(input_str)
